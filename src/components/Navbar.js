@@ -42,7 +42,7 @@ const Navbar = () => {
                     </div>
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row justify-content-evenly flex-grow-1 align-items-center">
                         <li className="nav-item">
-                        <Link to="/"><i className="bi bi-camera-video-fill"></i></Link>
+                        <Link to="/"><i className="bi bi-house-door-fill"></i></Link>
                         </li>
                         <li className="nav-item">
                         <Link to="/"><i className="bi bi-three-dots-vertical"></i></Link>
