@@ -3,9 +3,9 @@ import DisplayItem from './DisplayItem'
 
 const DisplayGrid = ({ videos }) => {
     return (
-        <div className="row">
+        <div className="row row-cols-4 mb-5">
             {videos.map(vid => 
-                <div className="col-3" key={vid.id}>
+                <div className="col" key={vid.id}>
                     <DisplayItem video={vid} />
                 </div>
             )}
