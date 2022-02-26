@@ -8,7 +8,7 @@ const Navbar = () => {
             <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div className="offcanvas offcanvas-start" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div className="offcanvas-header">
                         <h5 className="offcanvas-title" id="offcanvasNavbarLabel">YourVideos</h5>
                         <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -42,19 +42,19 @@ const Navbar = () => {
                     </div>
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row justify-content-evenly flex-grow-1 align-items-center">
                         <li className="nav-item">
-                        <Link to="/"><i class="bi bi-camera-video-fill"></i></Link>
+                        <Link to="/"><i className="bi bi-camera-video-fill"></i></Link>
                         </li>
                         <li className="nav-item">
-                        <Link to="/"><i class="bi bi-three-dots-vertical"></i></Link>
+                        <Link to="/"><i className="bi bi-three-dots-vertical"></i></Link>
                         </li>
                         <li className="nav-item">
-                        <Link to="/"><i class="bi bi-chat-fill"></i></Link>
+                        <Link to="/"><i className="bi bi-chat-fill"></i></Link>
                         </li>
                         <li className="nav-item">
-                        <Link to="/"><i class="bi bi-bell-fill"></i></Link>
+                        <Link to="/"><i className="bi bi-bell-fill"></i></Link>
                         </li>
                         <li className="nav-item">
-                        <Link to="/"><i class="bi bi-person-circle"></i></Link>
+                        <Link to="/"><i className="bi bi-person-circle"></i></Link>
                         </li>
                     </ul>
                 </div>
