@@ -1,27 +1,29 @@
 import React from 'react'
 import moment from 'moment'
-import { Link } from 'react-router-dom'
 
-const DisplayItem = ({ video }) => {
+const DisplayItem = ({ video, getData }) => {
     const timeAgo = moment(video.subido).fromNow()
 
     return (
-        <Link to="/search/charlie">
-            <div class="card my-3">
-                <img src={`${process.env.PUBLIC_URL}/assets/images/${video.imagen}`} class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h5 class="card-title">
+        <>
+            <div className="card my-3 position-relative">
+                <img src={`${process.env.PUBLIC_URL}/assets/images/${video.imagen}`} className="card-img-top" alt={video.name} />
+                <div className="card-body">
+                    <h5 className="card-title">
                         {video.nombre.substr(0, 35)}
                         {video.nombre.length>35 && <>...</>}
                     </h5>
-                    <p class="card-text">{video.autor}</p>
-                    <p class="card-text">{video.vistas} visualizaciones</p>
+                    <p className="card-text">{video.autor}</p>
+                    <p className="card-text">{video.vistas} visualizaciones</p>
                 </div>
-                <div class="card-footer">
-                    <small class="text-muted fecha_subida">{timeAgo}</small>
+                <div className="card-footer d-flex justify-content-evenly align-items-center">
+                    <small className="text-muted fecha_subida">{timeAgo}</small>
+                    <button type="button" className="btn btn-primary stretched-link" onClick={() => getData(video.src, video.nombre)} >
+                        Ver video
+                    </button>
                 </div>
             </div>
-        </Link>
+        </>
     )
 }
 
