@@ -19,7 +19,7 @@ const DisplayGridContainer = () => {
     
 
     return (
-        <div className="container">
+        <div className="container mt-5 pt-5">
             <DisplayGrid videos={videos} />
         </div>
     )
