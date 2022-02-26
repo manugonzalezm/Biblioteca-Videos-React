@@ -14,6 +14,8 @@ const DisplayGridContainer = () => {
         if(search){
             const filteredVideos = videos.filter(vid => (vid.nombre.toLowerCase()).includes(search.toLowerCase()) || (vid.autor.toLowerCase()).includes(search.toLowerCase()))
             setVideos(filteredVideos)
+        } else {
+            setVideos(dataVideos)
         }
     }, [search])
     
