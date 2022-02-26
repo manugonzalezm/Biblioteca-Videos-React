@@ -2,3 +2,9 @@ i{
     font-size: 1.2rem;
     color: grey;
 }
+
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+}

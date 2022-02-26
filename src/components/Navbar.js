@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
@@ -15,23 +16,19 @@ const Navbar = () => {
                     <div className="offcanvas-body">
                         <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                                <Link to="/">Inicio</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Link</a>
+                                <Link to="/">Explorar</Link>
                             </li>
-                            <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
-                                </a>
-                                <ul className="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                    <li><a className="dropdown-item" href="#">Action</a></li>
-                                    <li><a className="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr className="dropdown-divider" />
-                                    </li>
-                                    <li><a className="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                            <li className="nav-item">
+                                <Link to="/">Suscripciones</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/">Historial</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/">Favoritos</Link>
                             </li>
                         </ul>
                     </div>
@@ -45,19 +42,19 @@ const Navbar = () => {
                     </div>
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row justify-content-evenly flex-grow-1 align-items-center">
                         <li className="nav-item">
-                            <i class="bi bi-camera-video-fill"></i>
+                        <Link to="/"><i class="bi bi-camera-video-fill"></i></Link>
                         </li>
                         <li className="nav-item">
-                            <i class="bi bi-three-dots-vertical"></i>
+                        <Link to="/"><i class="bi bi-three-dots-vertical"></i></Link>
                         </li>
                         <li className="nav-item">
-                            <i class="bi bi-chat-fill"></i>
+                        <Link to="/"><i class="bi bi-chat-fill"></i></Link>
                         </li>
                         <li className="nav-item">
-                            <i class="bi bi-bell-fill"></i>
+                        <Link to="/"><i class="bi bi-bell-fill"></i></Link>
                         </li>
                         <li className="nav-item">
-                            <i class="bi bi-person-circle"></i>
+                        <Link to="/"><i class="bi bi-person-circle"></i></Link>
                         </li>
                     </ul>
                 </div>
