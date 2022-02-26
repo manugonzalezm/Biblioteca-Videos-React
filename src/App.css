@@ -16,3 +16,17 @@ a{
 .fecha_subida{
     font-size: 1rem;
 }
+
+.modal_style{
+    display: block;
+    background-color: rgba(0,0,0,0.95);
+}
+
+.modal-content{
+    height: 80vh;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
