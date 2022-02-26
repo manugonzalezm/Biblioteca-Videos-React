@@ -18,7 +18,7 @@ const DisplayItem = ({ video }) => {
                     <p class="card-text">{video.vistas} visualizaciones</p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted">{timeAgo}</small>
+                    <small class="text-muted fecha_subida">{timeAgo}</small>
                 </div>
             </div>
         </Link>
