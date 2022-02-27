@@ -36,4 +36,10 @@ iframe{
     margin-top: 2rem;
 }
 
+.not_found{
+    margin-top: 6rem;
+    text-align: center;
+}
+.not_found h2{
+    margin-bottom: 2rem;
 }
