@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Search from './Search'
 
 const Navbar = () => {
+
     return (
         <nav className="navbar navbar-light bg-light fixed-top">
             <div className="container-fluid">
@@ -35,10 +37,7 @@ const Navbar = () => {
                 </div>
                 <div className='d-flex flex-row justify-content-evenly flex-grow-1'>
                     <div className='d-flex flex-grow-1 justify-content-center'>
-                        <form className="d-flex">
-                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                                <button className="btn btn-outline-success" type="submit">Search</button>
-                        </form>
+                        <Search className="d-flex"/>
                     </div>
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row justify-content-evenly flex-grow-1 align-items-center">
                         <li className="nav-item">
