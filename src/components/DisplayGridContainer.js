@@ -1,28 +1,35 @@
 import React, { useState, useEffect } from 'react'
 import DisplayGrid from './DisplayGrid'
-import dataVideos from '../data/data'
 import { useParams } from 'react-router-dom'
+import axios from 'axios'
 
 const DisplayGridContainer = () => {
     const { search } = useParams();
-    console.log(search)
 
-    const[videos, setVideos] = useState(dataVideos);
-    console.log(videos)
-    
+    const[videos, setVideos] = useState([]);
+    const [loading, setLoading] = useState(true)
+
     useEffect(() => {
-        if(search){
-            const filteredVideos = videos.filter(vid => (vid.nombre.toLowerCase()).includes(search.toLowerCase()) || (vid.autor.toLowerCase()).includes(search.toLowerCase()))
-            setVideos(filteredVideos)
-        } else {
-            setVideos(dataVideos)
+        const fetchVideos = async () => {
+            setLoading(true)
+            const res = await axios.get('https://my-json-server.typicode.com/manugonzalezm/Biblioteca-Videos-React/videos')
+            if(search){
+                const filteredVideos = res.data.filter(vid => (vid.nombre.toLowerCase()).includes(search.toLowerCase()) || (vid.autor.toLowerCase()).includes(search.toLowerCase()))
+                setVideos(filteredVideos)
+                setLoading(false)
+            } else{
+                setVideos(res.data)
+                setLoading(false)
+            }
         }
+
+        fetchVideos()
+
     }, [search])
-    
 
     return (
         <div className="container mt-5 pt-5">
-            <DisplayGrid videos={videos} />
+            <DisplayGrid videos={videos} loading={loading}/>
         </div>
     )
 }
