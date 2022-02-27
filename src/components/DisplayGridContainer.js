@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import DisplayGrid from './DisplayGrid'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
+import NotFound from './NotFound'
 
 const DisplayGridContainer = () => {
     const { search } = useParams();
@@ -24,12 +25,11 @@ const DisplayGridContainer = () => {
         }
 
         fetchVideos()
-
     }, [search])
 
     return (
         <div className="container mt-5 pt-5">
-            <DisplayGrid videos={videos} loading={loading}/>
+            { videos.length===0 ? <NotFound /> : <DisplayGrid videos={videos} loading={loading}/> }
         </div>
     )
 }
