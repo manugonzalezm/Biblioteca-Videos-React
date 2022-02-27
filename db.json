@@ -134,6 +134,96 @@
             "subido": [2009, 2, 8],
             "src": "https://www.youtube.com/embed/yG7MPEQm1-w",
             "imagen": "luis_miguel_ahoratepuedesmarchar.webp"
+        },
+        {
+            "id": 16,
+            "nombre": "Queen - Bohemian Rhapsody (Official Video Remastered)",
+            "autor": "Queen Official",
+            "vistas": "1468 M",
+            "subido": [2009, 2, 8],
+            "src": "https://www.youtube.com/embed/fJ9rUzIMcZQ",
+            "imagen": "queen_bohemian.webp"
+        },
+        {
+            "id": 17,
+            "nombre": "Queen - Don't Stop Me Now (Official Video)",
+            "autor": "Queen Official",
+            "vistas": "748 M",
+            "subido": [2009, 2, 8],
+            "src": "https://www.youtube.com/embed/HgzGwKwLmgM",
+            "imagen": "queen_dontstopme.webp"
+        },
+        {
+            "id": 18,
+            "nombre": "Queen - The Show Must Go On (Official Video)",
+            "autor": "Queen Official",
+            "vistas": "202 M",
+            "subido": [2014, 2, 8],
+            "src": "https://www.youtube.com/embed/t99KH0TR-J4",
+            "imagen": "queen_theshow.webp"
+        },
+        {
+            "id": 19,
+            "nombre": "Queen - Somebody To Love (Official Video)",
+            "autor": "Queen Official",
+            "vistas": "408 M",
+            "subido": [2014, 2, 8],
+            "src": "https://www.youtube.com/embed/kijpcUv-b8M",
+            "imagen": "queen_somebodytolove.webp"
+        },
+        {
+            "id": 20,
+            "nombre": "Queen - Who Wants To Live Forever (Official Video)",
+            "autor": "Queen Official",
+            "vistas": "142 M",
+            "subido": [2009, 2, 8],
+            "src": "https://www.youtube.com/embed/_Jtpf8N5IDE",
+            "imagen": "queen_liveforever.webp"
+        },
+        {
+            "id": 21,
+            "nombre": "Queen - Crazy Little Thing Called Love (Official Video)",
+            "autor": "Queen Official",
+            "vistas": "183 M",
+            "subido": [2009, 2, 8],
+            "src": "https://www.youtube.com/embed/zO6D_BAuYCI",
+            "imagen": "queen_crazylittlething.webp"
+        },
+        {
+            "id": 22,
+            "nombre": "Soda Stereo - Prófugos (Gira Me Verás Volver)",
+            "autor": "Soda Stereo",
+            "vistas": "147 M",
+            "subido": [2015, 5, 8],
+            "src": "https://www.youtube.com/embed/eguctGjUNLI",
+            "imagen": "soda_profugos.webp"
+        },
+        {
+            "id": 23,
+            "nombre": "Soda Stereo - De Musica Ligera (El Último Concierto)",
+            "autor": "Soda Stereo",
+            "vistas": "223 M",
+            "subido": [2013, 5, 8],
+            "src": "https://www.youtube.com/embed/OX-us7PEfkc",
+            "imagen": "soda_demusicaligera.webp"
+        },
+        {
+            "id": 24,
+            "nombre": "Soda Stereo - En la Ciudad de la Furia (Official Video)",
+            "autor": "Soda Stereo",
+            "vistas": "24 M",
+            "subido": [2017, 5, 8],
+            "src": "https://www.youtube.com/embed/AVEDgT_lG60",
+            "imagen": "soda_ciudaddelafuria.webp"
+        },
+        {
+            "id": 25,
+            "nombre": "Soda Stereo - Tratame Suavemente (El Último Concierto)",
+            "autor": "Soda Stereo",
+            "vistas": "107 M",
+            "subido": [2012, 5, 8],
+            "src": "https://www.youtube.com/embed/xXD",
+            "imagen": "soda_tratamesuavemente.webp"
         }
     ]
 }
