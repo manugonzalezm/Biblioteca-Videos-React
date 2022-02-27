@@ -34,7 +34,10 @@ const DisplayGrid = ({ videos, loading }) => {
                         <div className="row row-cols-4 mb-5">
                             {currentVideos.map(vid =>
                                 <div className="col" key={vid.id}>
-                                    <DisplayItem video={vid} getData={getData} />
+                                    <DisplayItem 
+                                        video={vid} 
+                                        getData={getData} 
+                                    />
                                 </div>
                             )}
                         </div>
@@ -44,7 +47,14 @@ const DisplayGrid = ({ videos, loading }) => {
                             paginate={paginate}
                         />
                         {
-                            modal === true ? <ModalVideo src={tempData[1]} nombre={tempData[2]} hide={() => setModal(false)} /> : ''
+                            modal === true 
+                            ? 
+                                <ModalVideo 
+                                    src={tempData[1]} 
+                                    nombre={tempData[2]} 
+                                    hide={() => setModal(false)} 
+                                /> 
+                            : ''
                         }
                     </>
             }

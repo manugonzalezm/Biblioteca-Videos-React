@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import TextInput from './TextInput';
 
 const Search = () => {
-    const history = useNavigate()
+    const navigate = useNavigate()
 
     return (
             <Formik
@@ -19,7 +19,7 @@ const Search = () => {
                 onSubmit={(values, { setSubmitting }) => {
                     setTimeout(() => {
                         setSubmitting(false);
-                        history(`/search/${values.videoName}`)
+                        navigate(`/search/${values.videoName}`)
                     }, 400);
                 }}
             >

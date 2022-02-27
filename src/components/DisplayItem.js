@@ -7,7 +7,11 @@ const DisplayItem = ({ video, getData }) => {
     return (
         <>
             <div className="card my-3 position-relative">
-                <img src={`${process.env.PUBLIC_URL}/assets/images/${video.imagen}`} className="card-img-top" alt={video.name} />
+                <img 
+                    src={`${process.env.PUBLIC_URL}/assets/images/${video.imagen}`} 
+                    className="card-img-top" 
+                    alt={video.name} 
+                />
                 <div className="card-body">
                     <h5 className="card-title">
                         {video.nombre.substr(0, 35)}
@@ -18,7 +22,11 @@ const DisplayItem = ({ video, getData }) => {
                 </div>
                 <div className="card-footer d-flex justify-content-evenly align-items-center">
                     <small className="text-muted fecha_subida">{timeAgo}</small>
-                    <button type="button" className="btn btn-primary stretched-link" onClick={() => getData(video.src, video.nombre)} >
+                    <button 
+                        type="button" 
+                        className="btn btn-primary stretched-link" 
+                        onClick={() => getData(video.src, video.nombre)} 
+                    >
                         Ver video
                     </button>
                 </div>
