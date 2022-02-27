@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import DisplayItem from './DisplayItem'
 import ModalVideo from './ModalVideo'
+import Pagination from './Pagination'
 
 const DisplayGrid = ({ videos, loading }) => {
     const [modal, setModal] = useState(false)
@@ -12,6 +13,17 @@ const DisplayGrid = ({ videos, loading }) => {
         return setModal(true)
     }
 
+    const [currentPage, setCurrentPage] = useState(1)
+    const videosPerPage = 16
+
+    /* Obtener los videos de la pagina correspondiente */
+    const indexOfLastVideo = currentPage * videosPerPage
+    const indexOfFirstVideo = indexOfLastVideo - videosPerPage
+    const currentVideos = videos.slice(indexOfFirstVideo, indexOfLastVideo);
+
+    /* Cambiar Página */
+    const paginate = (pageNumber) => setCurrentPage(pageNumber)
+
     return (
         <>
             {
@@ -20,12 +32,17 @@ const DisplayGrid = ({ videos, loading }) => {
                 :
                     <>
                         <div className="row row-cols-4 mb-5">
-                            {videos.map(vid =>
+                            {currentVideos.map(vid =>
                                 <div className="col" key={vid.id}>
                                     <DisplayItem video={vid} getData={getData} />
                                 </div>
                             )}
                         </div>
+                        <Pagination 
+                            videosPerPage={videosPerPage} 
+                            totalVideos={videos.length} 
+                            paginate={paginate}
+                        />
                         {
                             modal === true ? <ModalVideo src={tempData[1]} nombre={tempData[2]} hide={() => setModal(false)} /> : ''
                         }
